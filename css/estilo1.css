@@ -1,0 +1,21 @@
+.container-form{
+					background: gray;
+					width: 600px;
+					margin: auto;
+}
+.col-sm-10{
+	width: 500px;
+}
+#myImage{
+	opacity: 0.5;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+a{
+	color: gray;
+}
+a:hover{
+	color: gray;
+}

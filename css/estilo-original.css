@@ -1,0 +1,57 @@
+body{
+		background: blue;
+}
+.navbar{
+			background: #f0f0f0;
+			height: 90px;
+		}
+.logo-img{
+	width: 80px;
+}
+.logo{
+		width: 100px;
+		float: left;
+}
+.container-fluid{
+	
+}
+.navbar-header{
+					background: #f0f0f0;
+					width: 50%;
+					height: 85px;
+					margin-top: 0px;
+					padding: 0px;
+					font-size: 30px;
+					font-family: 'Kavivanar', bold italic;
+					color: black;
+				}
+
+.img-menu1{
+			width: 25px;
+}
+.btn{
+		margin-top: 13px;
+	}
+.dropdown: hover{
+	background: gray;
+}
+.grilla-lista{
+			width: 30px;
+}
+.jumbotron{
+	padding-top: 10px;
+	height: 45px;
+}
+.col-sm-4:hover{
+					background: gray;
+}
+.photo{
+	width: 100%;
+}
+.row{
+	padding-top: 10px;
+}
+.video{
+	width: 100%;
+	
+}

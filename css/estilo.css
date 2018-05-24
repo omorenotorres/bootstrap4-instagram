@@ -67,3 +67,16 @@ a{
 a:hover{
 	color: white;
 }
+.container2{
+				width: 100px;
+			}
+.container3{
+				width: 100px;
+			}			
+.img-heart{
+			width: 40px;
+			float:left;
+		   }
+.a2{
+	 color: gray;
+   }		   

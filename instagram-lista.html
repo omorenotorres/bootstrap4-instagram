@@ -4,47 +4,115 @@
   <title>Instagram</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified CSS Bootstrap 4-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<!-- Google font-->
   <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+
+<!-- Estilo-->
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <div class="logo">
-        <img class="logo-img" src="img/instagram.png" alt="">
-      </div>
-      <h2>Instagram</h2>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><button type="button" class="btn btn-success"><a href="instagram-forms-lista.html">Create a New Post</a></button></li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img class="img-menu1"src="img/índice.jpg" alt=""><span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another Action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li><a href="#">Logout</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4"><a href="instagram.html"><img class="grilla-lista" src="img/grilla.jpg" alt=""></a></div>
-        <div class="col-sm-4"><a href="instagram-lista.html"><img class="grilla-lista" src="img/lista.jpg" alt=""></a></div>
-        <div class="col-sm-4"></div>
-      </div>
-    </div>
-</div>    
+<nav class="navbar">
+<!-- Image and text -->
+  <a class="navbar-logo" href="#">
+    <img src="img/instagram.png" width="70" height="70" alt="">
+    Instagram
+  </a>
+<!-- Fin Image and text -->
 
+<!-- NavBar Izquierdo -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Create a Post</button>
+
+        <div class="navbar-nav">
+           <li class="nav-item dropdown">
+            <a class="nav-item dropdown nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="img/indice.jpg" alt="" width="20">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>          
+            </div>
+          </li>
+          <a class="nav-item nav-link disabled" href="#"></a>
+          <a class="nav-item nav-link disabled" href="#"></a>
+          <a class="nav-item nav-link disabled" href="#"></a>
+          <a class="nav-item nav-link disabled" href="#"></a>   
+          <a class="nav-item nav-link disabled" href="#"></a>
+          <a class="nav-item nav-link disabled" href="#"></a>
+          <a class="nav-item nav-link disabled" href="#"></a>
+          <a class="nav-item nav-link disabled" href="#"></a>
+        </div>
+<!-- The Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create a Post</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-1">
+                    <a href="">
+                      <img src="img/camara.png" alt="" width="20">
+                    </a>
+                  </div>
+                  <div class="col-sm-1">
+                    <a href="">
+                      <img src="img/location.png" alt="" width="20">
+                    </a>
+                  </div>
+              </div>
+              <hr>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-basic" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- Final The Modal -->
+  
+
+    </nav>
+<!-- Fin NavBar izq-->
+</nav>
+<!-- Fin NavBar1-->
+<!-- Nav2-->
+
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">
+      <img src="img/grilla.jpg" alt="" width="32">
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="instagram-lista.html">
+      <img src="img/lista.jpg" alt="" width="37">
+    </a>
+  </li>
+</ul>
+<!-- Fin Nav2-->
+
+<!-- Foto1-->
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
@@ -57,9 +125,12 @@
     <div class="col-sm-8 text-left"> 
       <div class="container1">
         <h1>Foto 1</h1>
-        <img class="photo" src="img/3.JPG" alt="">
+        <a href="img/3.JPG">
+          <img class="photo" src="img/3.JPG" alt="">
+        </a>
+        
         <div>
-            <h4>23 Likes</h4>
+          <h4>23 Likes</h4>
         </div>        
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <div class="container">
@@ -74,7 +145,9 @@
 
       <div class="container1">
         <h1>Foto 2</h1>
-        <img class="photo" src="img/4.JPG" alt="">
+        <a href="img/4.JPG">
+           <img class="photo" src="img/4.JPG" alt=""> 
+        </a>
         <div>
             <h4>23 Likes</h4>
         </div>        
@@ -91,7 +164,9 @@
 
       <div class="container1">
         <h1>Foto 3</h1>
-        <img class="photo" src="img/5.JPG" alt="">
+        <a href="img/5.JPG">
+          <img class="photo" src="img/5.JPG" alt="">
+        </a>
         <div>
             <h4>23 Likes</h4>
         </div>
@@ -108,7 +183,9 @@
 
       <div class="container1">
         <h1>Foto 4</h1>
-        <img class="photo" src="img/6.JPG" alt="">
+        <a href="img/6.JPG">
+         <img class="photo" src="img/6.JPG" alt=""> 
+        </a>
         <div>
             <h4>23 Likes</h4>
         </div>        
@@ -125,7 +202,9 @@
 
       <div class="container1">
         <h1>Foto 5</h1>
-        <img class="photo" src="img/7.JPG" alt="">
+        <a href="img/7.JPG">
+          <img class="photo" src="img/7.JPG" alt="">
+        </a>
         <div>
             <h4>23 Likes</h4>
         </div>        
@@ -142,7 +221,9 @@
 
       <div class="container1">
         <h1>Video 1</h1>
-        <video controls class="video"><source src="video/Vois sur ton chemin.mp4" type="video/mp4"></video>
+        <a href="video/Vois sur ton chemin.mp4">
+            <video controls class="video"><source src="video/Vois sur ton chemin.mp4" type="video/mp4"></video>
+        </a>
         <div>
             <h4>23 Likes</h4>
         </div>          
@@ -159,7 +240,9 @@
 
       <div class="container1">
         <h1>Foto 6</h1>
-        <img class="photo" src="img/8.JPG" alt="">
+        <a href="img/8.JPG">
+          <img class="photo" src="img/8.JPG" alt="">
+        </a>
         <div>
             <h4>23 Likes</h4>
         </div>        
@@ -176,7 +259,9 @@
 
             <div class="container1">
         <h1>Foto 7</h1>
-        <img class="photo" src="img/1.JPG" alt="">
+        <a href="img/1.JPG">
+          <img class="photo" src="img/1.JPG" alt="">
+        </a>
         <div>
             <h4>23 Likes</h4>
         </div>        
@@ -193,7 +278,9 @@
 
       <div class="container1">
         <h1>Foto 8</h1>
-        <img class="photo" src="img/2.JPG" alt="">
+        <a href="img/2.JPG">
+          <img class="photo" src="img/2.JPG" alt="">
+        </a>
         <div>
             <h4>23 Likes</h4>
         </div>        
@@ -223,5 +310,11 @@
 
 </div>    
 </div>
+
+
+<!-- Latest compiled and minified JS Bootstrap 4-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>
